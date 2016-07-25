@@ -13,37 +13,37 @@ Abraços!
 
 ## Como Utilizar
 
-importa a biblioteca se bem que vais mudar
-```csharp
-using EZimba.Libs;```
+importa a biblioteca 
+
+using EZimba.Libs;
 
 **considerando que dt é uma DataTable válida.**
-```csharp
-DataTablePaginator dtp = new DataTablePaginator(dt, 5);```
 
-```csharp
-DataTable dt2 = dtp.inicio();```
+DataTablePaginator dtp = new DataTablePaginator(dt, 5);
+
+
+DataTable dt2 = dtp.inicio();
 
 **Próxima pagina**
-```csharp
-DataTable dt3 = dtp.avancar();```
+
+DataTable dt3 = dtp.avancar();
 
 **Retroceder**
-```csharp
-DataTable dt4 = dtp.retroceder();```
+
+DataTable dt4 = dtp.retroceder();
 
 **Ultima pagina**
-```csharp
-DataTable dt5 = dtp.fim();```
+
+DataTable dt5 = dtp.fim();
 
 **Página Nr página**
 considerando que nr séja um número Inteiro válido
-```csharp
-dt6 = dtp.pagina(nr);```
+
+dt6 = dtp.pagina(nr);
 
 **Número de paginas**
-```csharp
-int nrPaginas = dtp.nrPaginas;```
+
+int nrPaginas = dtp.nrPaginas;
 
 
 
