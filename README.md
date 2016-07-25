@@ -13,34 +13,34 @@ Abraços!
 
 ## Como Utilizar
 
-**importa a biblioteca se bem que vais mudar**
-using EZimba.Libs;
+importa a biblioteca se bem que vais mudar
+```csharp using EZimba.Libs;```
 
 **considerando que dt é uma DataTable válida.**
-DataTablePaginator dtp = new DataTablePaginator(dt, 5);
+```csharp DataTablePaginator dtp = new DataTablePaginator(dt, 5);```
 
-**DataTable dt2 = dtp.inicio();**
+```csharp DataTable dt2 = dtp.inicio();```
 
 **Próxima pagina**
-DataTable dt3 = dtp.avancar();
+```csharp DataTable dt3 = dtp.avancar();```
 
 **Retroceder**
-DataTable dt4 = dtp.retroceder();
+```csharp DataTable dt4 = dtp.retroceder();```
 
 **Ultima pagina**
-DataTable dt5 = dtp.fim();
+```csharp DataTable dt5 = dtp.fim();```
 
 **Página Nr página**
 considerando que nr séja um número Inteiro válido
-dt6 = dtp.pagina(nr);
+```csharp dt6 = dtp.pagina(nr);```
 
 **Número de paginas**
-int nrPaginas = dtp.nrPaginas;
+```csharp int nrPaginas = dtp.nrPaginas;```
 
 
 
 # Exemplo de Utilização
-
+```csharp
 using System;
 using System.Collections.Generic;
 using MySql.Data.MySqlClient;
@@ -138,3 +138,4 @@ namespace ConsoleApplication1
         }
     }
 }
+```
